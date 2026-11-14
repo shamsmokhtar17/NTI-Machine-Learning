@@ -1,6 +1,6 @@
 # NTI Machine Learning for Data Analysis
 
-All course tasks (Amira Tarek Abdallah).
+All course tasks (Shams Mokhtar Mohamed).
 
 | Folder | Dataset | Type |
 |---|---|---|
