@@ -1,0 +1,10 @@
+# scikit-learn must be the same version used for training (see last cell of the notebook)
+scikit-learn==1.6.1
+pandas
+numpy
+joblib
+gradio
+# only if the selected model is XGBoost / CatBoost / LightGBM:
+xgboost
+catboost
+lightgbm
