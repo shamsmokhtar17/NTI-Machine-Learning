@@ -1,0 +1,4 @@
+,Before tuning (CV PR-AUC),After tuning (best_score_),best_params_
+CatBoost,0.3573867626587104,0.3580227686773696,"{'depth': 6, 'iterations': 150, 'learning_rate': 0.05}"
+Gradient Boosting,0.3561612850867366,0.35692251023929694,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 120}"
+Random Forest,0.355625678077693,0.355625678077693,"{'min_samples_leaf': 5, 'n_estimators': 100}"
