@@ -13,7 +13,7 @@ UK Department for Transport *Road Safety Data 2018*: Accidents (122,635), Vehicl
 4. **No data leakage:** `Casualty_Severity` and `Number_of_Casualties` are **not** used (they are the result of the accident, and the accident severity equals the worst casualty severity in 100% of the cases); the police-attendance column is dropped for the same reason. The split is stratified and made before any fitting; imputing, scaling and encoding are inside a `Pipeline` / `ColumnTransformer`.
 5. **All models compared:** a Train-vs-Test table (Accuracy, Precision, Recall, F1, ROC-AUC, PR-AUC for every model), then cross-validation on the train data (3-fold, PR-AUC). Models: Logistic Regression, SVM (linear), Naive Bayes, KNN, Decision Tree, Random Forest, ExtraTrees, Bagging, AdaBoost, Gradient Boosting, HistGradientBoosting, XGBoost, LightGBM, CatBoost.
 6. **GridSearchCV** on the top 3, then the final model is trained on all the train data; the **threshold** is chosen on out-of-fold train predictions (max F1).
-7. **Final evaluation** on the test set (confusion matrix, ROC, PR, feature importance) and a **Gradio app**.
+7. **Final evaluation** on the test set (confusion matrix, ROC, PR, feature importance) and a **Streamlit app** (live deployment).
 
 ## Results
 Best model (selected by 3-fold CV PR-AUC + `GridSearchCV` on the top 3): **CatBoost** (`depth=6, iterations=150, learning_rate=0.05`, class-balanced), decision threshold **0.51** (max F1 on out-of-fold train predictions).
@@ -80,4 +80,5 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 (`app.py` is the same app with Gradio: `pip install gradio` then `python app.py`.)
-**Live demo (Streamlit Community Cloud):** _link will be added after deployment_
+
+**Live demo (Streamlit Community Cloud):** https://nti-machine-learning-yahbpmz7kaupiaw6nfkate.streamlit.app/
