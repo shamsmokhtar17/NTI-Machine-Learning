@@ -20,11 +20,11 @@ Every task follows the same steps: data understanding & cleaning → outlier ana
 | [Task10_Laptop_Prices](Task10_Laptop_Prices/) | Laptop Prices | Regression | CatBoost | R² (real price) 0.783, (log) 0.890 |
 | [Final_Project](Final_Project/) | UK Road Safety 2018 (3 tables) | Classification | CatBoost | ROC-AUC 0.709, PR-AUC 0.380, Recall 0.64 |
 
-Each folder has its own `README.md` (steps, full results, interpretation, limitations), the `notebook.ipynb` and the `dataset/`. Gradio apps are included in Task01 (`app.py`), Task05, Task06, Task07, Task09 and Task10.
+Each folder has its own `README.md` (steps, full results, interpretation, limitations), the `notebook.ipynb` and the `dataset/`. Apps: Gradio in Task01 (`app.py`), Task05, Task06, Task07 and Task09 (last cell of the notebook); Task10 and the Final Project have a Streamlit app (live links below).
 
 ## Live deployments
 - **Final Project:** [Road Accident Severity app (Streamlit)](https://nti-machine-learning-yahbpmz7kaupiaw6nfkate.streamlit.app/)
-- **Task deployment (Task10 - Laptop Prices):** _link will be added_
+- **Task deployment (Task10 - Laptop Prices):** [Laptop Price Prediction app (Streamlit)](https://nti-machine-learning-gekhqeqvqccmrd4effvtoy.streamlit.app/)
 
 ## How to run
 ```
