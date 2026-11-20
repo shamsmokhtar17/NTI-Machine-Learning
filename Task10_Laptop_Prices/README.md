@@ -29,7 +29,7 @@ Best model (GridSearchCV on the top 3 by CV): **CatBoost** (`depth=6, iterations
 ## Deployment (Streamlit app)
 `streamlit_app.py` loads `models/laptop_model.joblib` (the trained CatBoost model + imputer + target encoding + scaler saved by the last cells of the notebook) and predicts the price from the main specs of a laptop. (`app.py` is the same app written with Gradio.)
 - Run locally: `pip install -r requirements.txt` then `streamlit run streamlit_app.py`
-- **Live demo:** _link will be added after deployment on Streamlit Community Cloud_
+- **Live demo:** https://nti-machine-learning-gekhqeqvqccmrd4effvtoy.streamlit.app/
 
 ## How to run
 ```
